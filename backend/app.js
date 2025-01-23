@@ -13,12 +13,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Allow CORS for requests from http://localhost:3000
-app.use(cors({
-  origin: "http://localhost:3000",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true // If using cookies or authentication
-}));
+// Allow CORS for all
+app.use(cors());
 
 // Connect to MongoDB
 mongoose
