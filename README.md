@@ -2,6 +2,8 @@
 
 Smart Ticket Assistant is a full-stack application designed to streamline ticket management by identifying similar past incidents for faster resolution. It features a React-based frontend and a Node.js backend integrated with Python scripts for machine learning processing. This project simplifies the process of uploading historical data, matching new tickets with existing incidents, and improving overall efficiency in handling customer or internal support tickets.
 
+Live: https://smartticketassistant.netlify.app/
+
 ## Features
 - Upload historical incident data (Excel files).
 - Find similar incidents for new tickets using machine learning (TF-IDF + Cosine Similarity).
