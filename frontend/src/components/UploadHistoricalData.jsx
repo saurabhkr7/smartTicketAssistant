@@ -20,7 +20,7 @@ function UploadHistoricalData() {
     formData.append("file", file);
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8000/api/historical-data/upload", formData);
+      const response = await axios.post("https://smartticketassistantservice.onrender.com/api/historical-data/upload", formData);
       setMessage(response.data.message);
     } catch (error) {
       setMessage("Error uploading file. Please try again.");

@@ -21,7 +21,7 @@ function FindMatches() {
     formData.append("file", file);
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8000/api/match-finder/find-match", formData);
+      const response = await axios.post("https://smartticketassistantservice.onrender.com/api/match-finder/find-match", formData);
       setMatches(response.data);
     } catch (error) {
       setMessage("Error finding matches. Please try again.");
